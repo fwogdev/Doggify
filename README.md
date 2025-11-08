@@ -1,6 +1,10 @@
 ## Welcome to Doggify
 ** Doggify is a Open-Source Chromium BookMark that create a image of a dog and over-lays it over your screen.
 
+<a href="javascript:(function(){document.body.style.background='red';alert('Background changed!');})();">
+  🎨 Drag me to make your page red!
+</a>
+
 Doggify is completely made is JavaScript (.js), and doesn't have plans to update it the future (for obvious reasons).
 
 # Installation
