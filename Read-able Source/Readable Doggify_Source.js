@@ -1,0 +1,33 @@
+javascript:(function() {
+    var img=document.createElement("img");
+    img.src="https://imgs.search.brave.com/pjyT2PV6HZGNCkT8niwSUkTxP3bmXD7zxp8rKi5tBdI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/c3RvY2tzbmFwLmlv/L2ltZy10aHVtYnMv/MjgwaC9kb2ctcHVw/cHlfUkFCSllJTkVR/WS5qcGc";
+
+    img.style.position="fixed";
+    img.style.left="100px";
+    img.style.top="100px";
+    img.style.width="400px";
+    img.style.height="auto";
+    img.style.zIndex="9999";
+    img.style.cursor="grab";
+    document.body.appendChild(img);
+    
+    let isDragging=false,offsetX=0,offsetY=0;
+    img.addEventListener("mousedown", function(e) {
+        isDragging=true;
+        offsetX=e.clientX-parseInt(img.style.left);
+        offsetY=e.clientY-parseInt(img.style.top);
+        img.style.cursor="grabbing";
+    });
+
+    document.addEventListener("mousemove", function(e) {
+        if (isDragging) {
+            img.style.left=(e.clientX-offsetX)+"px";
+            img.style.top=(e.clientY-offsetY)+"px";
+        }
+    });
+
+    document.addEventListener("mouseup", function() {
+        isDragging=false;
+        img.style.cursor="grab";
+    });
+})();
