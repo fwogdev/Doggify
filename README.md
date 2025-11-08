@@ -13,4 +13,4 @@ Doggify is completely made is JavaScript (.js), and doesn't have plans to update
 ** After, this menu will pop up. In the URL section paste the code you copied.
 <img width="468" height="542" alt="Bookmark_Menu" src="https://github.com/user-attachments/assets/125c5a2f-f1b4-40f2-9169-6f7ed5f89977" />
 
-** Then press "Save", after that go on what ever page you want (Besides a new tab), and press it!
+** Then press "Save", after that go on what ever page you want (Besides a new tab), and press the new bookmark!
